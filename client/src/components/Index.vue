@@ -9,10 +9,10 @@
           </button>
       </p>
       <div v-for="user in users" v-bind:key="user.id">
-        <p>id: {{ user.id }}</p>
-        <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>Password: {{ user.password }}</p>
+        <p>name: {{ user.name }}</p>
+        <p>system: {{ user.system }} </p>
+        <p>capacity: {{ user.capacity }}</p>
+        <p>size: {{ user.size }}</p>
         <p>
           <button v-on:click="navigateTo('/user/' + user.id)">
             ดูข้อมูลผู้ใช้

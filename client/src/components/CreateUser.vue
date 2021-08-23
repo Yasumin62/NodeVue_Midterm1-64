@@ -3,17 +3,17 @@
     <h1>Create User</h1>
     <form v-on:submit.prevent = "createUser">
         <p>name: <input type="text" v-model="user.name"></p>
-        <p>lastname: <input type="text" v-model="user.lastname"></p>
-        <p>email: <input type="text" v-model="user.email"></p>
-        <p>password: <input type="text" v-model="user.password"></p>
+        <p>system: <input type="text" v-model="user.system"></p>
+        <p>capacity: <input type="text" v-model="user.capacity"></p>
+        <p>size: <input type="text" v-model="user.size"></p>
         <p><button type="submit">create user</button></p>
     </form>
     <hr>
     <div>
-        <p>name: {{user.name}}</p>
-        <p>lastname: {{user.lastname}}</p>
-        <p>email: {{user.email}}</p>
-        <p>password: {{user.password}}</p>
+        <p>name: {{ user.name }}</p>
+        <p>system: {{ user.system }} </p>
+        <p>capacity: {{ user.capacity }}</p>
+        <p>size: {{ user.size }}</p>
     </div>
 </div>
 </template>
@@ -25,9 +25,9 @@ export default {
         return{
             user:{
                 name: '',
-                lastname: '',
-                email: '',
-                password: '',
+                system: '',
+                capacity: '',
+                size: '',
                 status: 'active'
             }
         }
